@@ -59,7 +59,7 @@ RSpec.describe 'Pages API', type: :request do
 
   describe 'POST /pages' do
 
-    let(:valid_attributes) { { page: { url: 'http://google.com/' } } }
+    let(:valid_attributes) { { page: { url: 'http://github.com/' } } }
 
     context 'when the request is valid' do
 

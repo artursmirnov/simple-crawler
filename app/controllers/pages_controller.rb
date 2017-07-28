@@ -42,7 +42,7 @@ class PagesController < ApplicationController
     doc.css('h1, h2, h3, a').each do |el|
       @page.contents.create!({
         kind: el.name,
-        value: el.text.strip
+        value: el.text.strip.force_encoding('ISO-8859-1').encode('UTF-8')
       })
     end
 
