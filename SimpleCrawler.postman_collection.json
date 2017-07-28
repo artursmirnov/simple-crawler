@@ -1,0 +1,64 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SimpleCrawler",
+		"_postman_id": "d1b25e2b-d30e-388f-3936-16ea29886599",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /pages",
+			"request": {
+				"url": "https://simple-crawler.herokuapp.com/pages",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Fetches all parsed pages"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /pages",
+			"request": {
+				"url": "https://simple-crawler.herokuapp.com/pages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\": {\n\t\t\"url\": \"\"\n\t}\n}"
+				},
+				"description": "Creates a new page and parses the page contents"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /pages/:id",
+			"request": {
+				"url": "https://simple-crawler.herokuapp.com/pages/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /pages/:id",
+			"request": {
+				"url": "https://simple-crawler.herokuapp.com/pages/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Fetches a single page with parsed contents"
+			},
+			"response": []
+		}
+	]
+}
