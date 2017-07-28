@@ -1,3 +1,2 @@
-class ApplicationController < ActionController::Api
-  protect_from_forgery with: :exception
+class ApplicationController < ActionController::API
 end
