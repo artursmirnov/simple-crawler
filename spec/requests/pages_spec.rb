@@ -66,7 +66,7 @@ RSpec.describe 'Pages API', type: :request do
       before { post '/pages', params: valid_attributes }
 
       it 'creates a page' do
-        expect(json['page']['url']).to eq('http://google.com/')
+        expect(json['page']['url']).to eq('http://github.com/')
       end
 
       it 'returns status code 201' do
