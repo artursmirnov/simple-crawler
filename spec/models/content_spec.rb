@@ -14,6 +14,8 @@ RSpec.describe Content, type: :model do
 
   it { should be_valid }
 
+  it { should belong_to(:page) }
+
   its(:page) { should eq page }
 
   describe "without kind" do

@@ -7,8 +7,11 @@ RSpec.describe Page, type: :model do
   subject { @page }
 
   it { should respond_to(:url) }
+  it { should respond_to(:contents) }
 
   it { should be_valid }
+
+  it { should have_many(:contents).dependent(:destroy) }
 
   describe "without url" do
     before { @page.url = "" }
