@@ -3,10 +3,9 @@ class CreateContents < ActiveRecord::Migration[5.1]
     create_table :contents do |t|
       t.string :kind
       t.string :value
-      t.integer :page_id
+      t.references :page, foreign_key: true
 
       t.timestamps
     end
-    add_index :contents, :page_id
   end
 end

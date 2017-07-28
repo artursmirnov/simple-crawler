@@ -5,5 +5,6 @@ class CreatePages < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
+    add_index :pages, :url, unique: true
   end
 end

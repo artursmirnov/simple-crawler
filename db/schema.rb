@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170727190002) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["url"], name: "index_pages_on_url", unique: true
   end
 
 end
