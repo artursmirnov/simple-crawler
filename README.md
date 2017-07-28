@@ -1,4 +1,4 @@
-# Simple Crawler
+# Simple Crawler [![CircleCI](https://circleci.com/gh/artursmirnov/simple-crawler.svg?style=svg)](https://circleci.com/gh/artursmirnov/simple-crawler/tree/master)
 
 > This simple Ruby on Rails application parses page contents and stores them in database classifying by type.
 
